@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BTS_3.2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light" id="top">
+  <div class="container py-4">
+
+    <!-- Jumbotron (replacement in BS5) -->
+    <section class="p-5 mb-4 bg-info text-dark rounded-3">
+      <div class="container-fluid py-3">
+        <h1 class="display-6 fw-bold mb-2">Galleria immagini</h1>
+        <p class="mb-0">Tre immagini con stili diversi: cerchio a destra, thumbnail centrata e immagine a sinistra con bordi arrotondati.</p>
+      </div>
+    </section>
+
+    <!-- Grid layout for images -->
+    <div class="row g-4">
+
+      <!-- a) Fluttuante a destra in un cerchio -->
+      <div class="col-12">
+        <div class="clearfix">
+          <img src="https://picsum.photos/seed/circle/280" alt="img circle right" class="rounded-circle float-end ms-3 mb-3 img-fluid" width="280" height="280">
+          <h2 class="h5">a) Immagine fluttuante a destra in un cerchio</h2>
+          <p class="mb-0">Classi usate: <code>float-end</code> + <code>rounded-circle</code> + <code>img-fluid</code>.</p>
+        </div>
+      </div>
+
+      <!-- b) Centrata in un thumbnail -->
+      <div class="col-12">
+        <h2 class="h5">b) Immagine centrata in thumbnail</h2>
+        <img src="https://picsum.photos/seed/thumbnail/600/350" alt="img thumbnail center" class="img-thumbnail d-block mx-auto">
+        <p class="small text-muted mb-0 text-center">Classi: <code>img-thumbnail</code> + <code>d-block mx-auto</code>.</p>
+      </div>
+
+      <!-- c) Fluttuante a sinistra con bordi arrotondati -->
+      <div class="col-12">
+        <div class="clearfix">
+          <img src="https://picsum.photos/seed/rounded/320/220" alt="img left rounded" class="rounded float-start me-3 mb-3 img-fluid">
+          <h2 class="h5">c) Immagine fluttuante a sinistra con bordi arrotondati</h2>
+          <p class="mb-0">Classi: <code>float-start</code> + <code>rounded</code> + <code>img-fluid</code>.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alert dismissible with fade -->
+    <div class="alert alert-success alert-dismissible fade show mt-4" role="alert">
+      <strong>Fatto!</strong> Torna rapidamente all'<a href="#top" class="alert-link">inizio pagina</a>.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <!-- Buttons -->
+    <section class="mt-4">
+      <h2 class="h5 mb-3">Bottoni</h2>
+
+      <!-- Outline buttons -->
+      <div class="mb-3">
+        <button class="btn btn-outline-primary me-2">Outline Primary</button>
+        <button class="btn btn-outline-success me-2">Outline Success</button>
+        <button class="btn btn-outline-danger">Outline Danger</button>
+      </div>
+
+      <!-- Block level buttons -->
+      <div class="d-grid gap-2 mb-3">
+        <button class="btn btn-primary">Block Button 1</button>
+        <button class="btn btn-secondary">Block Button 2</button>
+      </div>
+
+      <!-- Button group with dropdown -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-info">Azioni</button>
+        <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Elemento 1</a></li>
+          <li><a class="dropdown-item" href="#">Elemento 2</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Altro…</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

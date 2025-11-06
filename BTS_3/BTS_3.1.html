@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BTS_3.1 - Tabelle</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body id="top" class="bg-light">
+  <div class="container mt-5">
+    <h1 class="mb-4 text-center">Esercizio BTS_3.1 – Tabelle</h1>
+    <p class="text-center text-muted">Layout grid in stile BTS_1.2: container → row → col.</p>
+
+    <!-- Riga di layout come in BTS_1.2 -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+
+        <!-- 1) Tabella 4×4 con intestazione rossa e righe a strisce nero/grigio -->
+        <section class="mb-5">
+          <h2 class="h5 mb-3">1) Tabella 4×4 + intestazione</h2>
+          <table class="table table-dark table-striped table-hover align-middle">
+            <thead class="table-danger text-dark">
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+                <th>Note</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>John</td><td>Doe</td><td>john@example.com</td><td>—</td></tr>
+              <tr><td>Mary</td><td>Moe</td><td>mary@example.com</td><td>—</td></tr>
+              <tr><td>July</td><td>Dooley</td><td>july@example.com</td><td>—</td></tr>
+              <tr><td>Alan</td><td>Smith</td><td>alan@example.com</td><td>—</td></tr>
+            </tbody>
+          </table>
+          <ul class="small text-muted mb-0">
+            <li><code>.table-danger</code> applicata a <code>&lt;thead&gt;</code> rende l’intestazione rossa.</li>
+            <li><code>.table-dark</code> + <code>.table-striped</code> producono le righe nero/grigio.</li>
+          </ul>
+        </section>
+
+        <!-- 2) Stessa tabella versione responsive -->
+        <section>
+          <h2 class="h5 mb-3">2) Tabella responsive</h2>
+          <div class="table-responsive">
+            <table class="table table-dark table-striped table-hover align-middle mb-0">
+              <thead class="table-danger text-dark">
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+                  <th>Note</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>John</td><td>Doe</td><td>john@example.com</td><td>—</td></tr>
+                <tr><td>Mary</td><td>Moe</td><td>mary@example.com</td><td>—</td></tr>
+                <tr><td>July</td><td>Dooley</td><td>july@example.com</td><td>—</td></tr>
+                <tr><td>Alan</td><td>Smith</td><td>alan@example.com</td><td>—</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="small text-muted mt-2 mb-0">Il wrapper <code>.table-responsive</code> aggiunge lo scroll orizzontale su schermi stretti.</p>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
